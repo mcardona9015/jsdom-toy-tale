@@ -4,31 +4,31 @@
       "id": 1,
       "name": "Woody",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 5
+      "likes": 20
     },
     {
       "id": 2,
       "name": "Buzz Lightyear",
       "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": "15 Likes"
+      "likes": 16
     },
     {
       "id": 3,
       "name": "Mr. Potato Head",
       "image": "https://vignette.wikia.nocookie.net/universe-of-smash-bros-lawl/images/d/d8/Mr-potato-head-toy-story.gif/revision/latest?cb=20151129131217",
-      "likes": 3
+      "likes": 7
     },
     {
       "id": 4,
       "name": "Slinky Dog",
       "image": "https://www.freeiconspng.com/uploads/slinky-png-transparent-1.png",
-      "likes": 4
+      "likes": 11
     },
     {
       "id": 5,
       "name": "Rex",
       "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
-      "likes": 1
+      "likes": 6
     },
     {
       "id": 6,
@@ -40,19 +40,31 @@
       "id": 7,
       "name": "Hamm",
       "image": "https://cdn140.picsart.com/244090226021212.png?r1024x1024",
-      "likes": 0
+      "likes": 4
     },
     {
       "id": 8,
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
-      "likes": -2
+      "likes": 4
     },
     {
       "name": "Alex",
       "image": "https://cnet3.cbsistatic.com/img/xh7SVje9bq1_azlPW73EGrHHJVQ=/1200x630/2020/10/28/5a601f4a-06c8-4374-b10d-9f07fe183390/babyyoda-target-1.png",
-      "likes": 0,
+      "likes": 3,
       "id": 9
+    },
+    {
+      "name": "test",
+      "image": "https://cars.usnews.com/cars-trucks/toyota/c-hr/2020/photos-exterior",
+      "likes": 5,
+      "id": 10
+    },
+    {
+      "name": "test",
+      "image": "https://cars.usnews.com/static/images/Auto/izmo/i159613994/2020_toyota_c_hr_angularfront.jpg",
+      "likes": 2,
+      "id": 11
     }
   ]
 }

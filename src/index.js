@@ -94,15 +94,16 @@ toyCollection.addEventListener('click', (e) => {
     const toyCard = e.target.closest('div')
     
     const getLikes = e.target.previousElementSibling
-    let numOfLikes = parseInt(getLikes.innerText) 
-    const likes = getLikes.innerText = `${numOfLikes + 1} Likes`
+    let numOfLikes = parseInt(getLikes.innerText) + 1
+    console.log(numOfLikes)
+    const likes = getLikes.innerText = `${numOfLikes} Likes`
     
     fetch(`${url}/${toyCard.dataset.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({likes})
+      body: JSON.stringify({likes: numOfLikes})
     })
 
   
