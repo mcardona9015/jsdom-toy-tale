@@ -73,7 +73,41 @@ createToyForm.addEventListener('submit', (e) => {
   renderOneToy(newToy)
   e.target.reset()
 
-  fetch(url)
+  fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    } ,
 
+    body: JSON.stringify(newToy),
+  })
+
+
+})
+
+// INCREASE LIKES //
+
+//const likeBtn = document.getElementsByClassName('.like-btn')
+
+toyCollection.addEventListener('click', (e) => {
+  if (e.target.className === 'like-btn'){
+    const toyCard = e.target.closest('div')
+    
+    const getLikes = e.target.previousElementSibling
+    let numOfLikes = parseInt(getLikes.innerText) 
+    const likes = getLikes.innerText = `${numOfLikes + 1} Likes`
+    
+    fetch(`${url}/${toyCard.dataset.id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({likes})
+    })
+
+  
+  }
+  
+  
 
 })
