@@ -12,4 +12,68 @@ document.addEventListener("DOMContentLoaded", () => {
       toyFormContainer.style.display = "none";
     }
   });
+  fetchToys()
 });
+
+//fetch toys//
+
+const url = "http://localhost:3000/toys"
+let toysData
+const toyCollection = document.querySelector('#toy-collection')
+
+function fetchToys() {
+  fetch(url)
+  .then(response => response.json())
+  .then(data => toysData = data)
+  .then(toysData => renderAllToys(toysData))
+}
+
+function renderOneToy(toyObject) {
+  const card = document.createElement('div')
+  card.classList = 'card'
+  card.dataset.id = toyObject.id
+
+  const h2 = document.createElement('h2')
+  h2.innerText = toyObject.name
+
+  const image = document.createElement('img')
+  image.src = toyObject.image
+  image.alt = toyObject.name
+  image.classList = 'toy-avatar'
+
+  const likes = document.createElement('p')
+  likes.innerText = `${toyObject.likes} Likes`
+
+  const likeButton = document.createElement('button')
+  likeButton.innerText = "Like ❤️"
+  likeButton.classList = 'like-btn'
+
+  card.append(h2, image, likes, likeButton)
+  toyCollection.append(card)
+}
+
+function renderAllToys(toysArray) {
+  toysArray.forEach(toy => {
+    renderOneToy(toy)
+  })
+}
+
+//create toys//
+
+const createToyForm = document.querySelector('.add-toy-form')
+
+createToyForm.addEventListener('submit', (e) => {
+  e.preventDefault()
+  const name = e.target.name.value
+  const image = e.target.image.value
+  const likes = 0
+
+  const newToy = {name, image, likes}
+
+  renderOneToy(newToy)
+  e.target.reset()
+
+  fetch(url)
+
+
+})
