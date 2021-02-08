@@ -16,13 +16,13 @@
       "id": 3,
       "name": "Mr. Potato Head",
       "image": "https://vignette.wikia.nocookie.net/universe-of-smash-bros-lawl/images/d/d8/Mr-potato-head-toy-story.gif/revision/latest?cb=20151129131217",
-      "likes": 7
+      "likes": 8
     },
     {
       "id": 4,
       "name": "Slinky Dog",
       "image": "https://www.freeiconspng.com/uploads/slinky-png-transparent-1.png",
-      "likes": 11
+      "likes": 26
     },
     {
       "id": 5,
@@ -40,7 +40,7 @@
       "id": 7,
       "name": "Hamm",
       "image": "https://cdn140.picsart.com/244090226021212.png?r1024x1024",
-      "likes": 4
+      "likes": 5
     },
     {
       "id": 8,
@@ -56,15 +56,15 @@
     },
     {
       "name": "test",
-      "image": "https://cars.usnews.com/cars-trucks/toyota/c-hr/2020/photos-exterior",
-      "likes": 5,
-      "id": 10
+      "image": "https://cars.usnews.com/static/images/Auto/izmo/i159613994/2020_toyota_c_hr_angularfront.jpg",
+      "likes": 2,
+      "id": 11
     },
     {
       "name": "test",
       "image": "https://cars.usnews.com/static/images/Auto/izmo/i159613994/2020_toyota_c_hr_angularfront.jpg",
       "likes": 2,
-      "id": 11
+      "id": 12
     }
   ]
 }
